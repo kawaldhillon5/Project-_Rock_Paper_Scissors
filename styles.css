@@ -1,0 +1,60 @@
+html,body {
+    height: 100%;
+    margin: 0;;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: grey;
+    flex: 1;
+    align-items: center;
+}
+header,
+footer {
+    background-color: bisque;
+    color: black;
+    text-align: center;
+}
+
+button {
+    background-color: bisque;
+    color: black;
+    padding: 30px;
+    font-size: 24px;
+    border-color: bisque;
+    border-radius: 10px;
+    flex: 0 1 auto;
+    margin: 50px;
+    max-width: 300px;
+    max-height: 100px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sl {
+    display: flex;
+    justify-content: space-between;
+}
+ .score{
+    font-size: 50px;
+    display: flex;;
+    justify-content: space-evenly;
+ }
+
+ p{
+    font-size: 24px;
+    margin: 20px;
+ }
+
