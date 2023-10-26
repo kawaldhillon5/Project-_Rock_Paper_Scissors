@@ -29,8 +29,8 @@ function getComputerChoice(){
 function play(a){
     roundNum.textContent = "Round "+roundNumber;
     let pS = a, cS = getComputerChoice();
-    playerSelect.textContent = "Player " + pS;
-    computerSelect.textContent = "Computer "+cS;
+    playerSelect.textContent = "Player " + " " + pS;
+    computerSelect.textContent = "Computer " + " " + cS;
     selection.appendChild(playerSelect);
     selection.appendChild(computerSelect);
     console.log(pS);
@@ -96,6 +96,8 @@ function playRound(){
         let a = e.target.textContent;
         play(a)});    
 }
+
+const rules = document.createElement("p");
 const gameDiv = document.querySelector(".game-div");
 const header = document.querySelector("header");
 const title = document.createElement("h1")
@@ -114,11 +116,15 @@ let roundNumber = 2;
 
 function game(){
 title.textContent = "Rock Paper Scissors";
+rules.classList.add("rules");
+rules.textContent = "Classic Rock Paper Scisoors Game. Play 5 rounds against Computer. Click Start to begin.";
 start.classList.add("start");
 start.textContent = "Start Game";
 header.appendChild(title);
+gameDiv.appendChild(rules);
 gameDiv.appendChild(start);
 start.addEventListener("click", () =>{
+    gameDiv.removeChild(rules);
     gameDiv.removeChild(start);
     playRound();
 });

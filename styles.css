@@ -3,7 +3,11 @@ html,body {
     margin: 0;;
 }
 
-
+.rules {
+    max-width: 450px;
+    max-height: 200px;
+    margin: 50px;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -13,7 +17,7 @@ body{
 .game-div{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: grey;
     flex: 1;
     align-items: center;
@@ -48,7 +52,7 @@ button {
     justify-content: space-between;
 }
  .score{
-    font-size: 50px;
+
     display: flex;;
     justify-content: space-evenly;
  }
