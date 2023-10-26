@@ -117,7 +117,7 @@ let roundNumber = 2;
 function game(){
 title.textContent = "Rock Paper Scissors";
 rules.classList.add("rules");
-rules.textContent = "Classic Rock Paper Scisoors Game. Play 5 rounds against Computer. Click Start to begin.";
+rules.textContent = "Classic Rock Paper Scissors Game. Play 5 rounds against Computer. Click Start to begin.";
 start.classList.add("start");
 start.textContent = "Start Game";
 header.appendChild(title);
